@@ -4,6 +4,9 @@
 apt-get update
 apt-get upgrade
 
+# so golang doesn't stop the show with popularity contest questions
+export DEBIAN_FRONTEND=noninteractive
+
 # get all the compilers/tools
 apt-get -q -y install algol68g bash beef boo clisp clojure1.4 coffeescript \
   f2c fp-compiler g++ guile-2.0 gawk gcc gforth gfortran ghc gnat gnu-smalltalk \
