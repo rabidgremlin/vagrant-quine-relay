@@ -8,4 +8,4 @@ To use:
 3. Run *vagrant up* Config should install all required files and run the process
 4. Check out *qr* folder for the resulting source files
 
-**Note:** The run currently crashes out with an error during the Fortran compile... not sure why
+**Note:** Scheme and Fortran problems hopefully fixed, please leave issue if not.
