@@ -16,6 +16,8 @@ apt-get -q -y install algol68g bash beef boo clisp clojure1.4 coffeescript \
   swi-prolog tcc tcl8.5 ucblogo valac git
 
 # create a folder to hold all the output
+# but clean up first so  we can recover from a failed bootstrap
+rm -rf /vagrant/qr
 mkdir /vagrant/qr
 cd /vagrant/qr
 
