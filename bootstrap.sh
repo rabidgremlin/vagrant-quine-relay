@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+# fix locale so perl doesn't complain about LC_ALL
+locale-gen en_US en_us.UTF-8
+dpkg-reconfigure locales
+export LC_ALL=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+
 # make sure everything is up to date
 apt-get update
 apt-get upgrade
@@ -8,12 +14,21 @@ apt-get upgrade
 export DEBIAN_FRONTEND=noninteractive
 
 # get all the compilers/tools
-apt-get -q -y install algol68g bash beef boo clisp clojure1.4 coffeescript \
-  f2c fp-compiler g++ guile-2.0 gawk gcc gforth gfortran ghc gnat gnu-smalltalk \
-  gobjc golang groovy icont intercal iverilog jasmin-sable llvm lua5.2 \
-  make mono-devel mono-mcs nodejs ocaml octave open-cobol openjdk-6-jdk \
-  parrot perl php5-cli pike7.8 python r-base regina-rexx ruby1.9.3 scala \
-  swi-prolog tcc tcl8.5 ucblogo valac git
+apt-get -q -y install afnix algol68g aplus-fsf asymptote \
+  ats-lang-anairiats bash bf boo bsdgames clisp clojure1.4 cmake \
+  coffeescript f2c fp-compiler g++ gauche gawk gcc gforth gfortran \
+  ghc ghostscript gnat gnu-smalltalk gobjc golang groovy icont iconx \
+  intercal iverilog jasmin-sable libpng12-dev llvm lua5.2 make maxima \
+  mlton mono-devel mono-mcs mono-vbnc nasm neko nickle nodejs ocaml \
+  octave open-cobol openjdk-6-jdk pari-gp parrot perl php5-cli pike7.8 \
+  python r-base ratfor regina-rexx ruby2.0 scala scilab slsh spl-core \
+  swi-prolog tcl ucblogo valac xsltproc yorick zoem \
+  git tcc
+
+
+# otherwise step 72 ppt -> Prolog will fail with a:
+# /bin/sh: 1: ppt: not found
+export PATH="$PATH:/usr/games"
 
 # create a folder to hold all the output
 # but clean up first so  we can recover from a failed bootstrap
@@ -23,6 +38,9 @@ cd /vagrant/qr
 
 # grab the code
 git clone https://github.com/mame/quine-relay .
+
+# make non-ubuntu-packaged language dependencies
+cd vendor && make && cd ..
 
 # make it!
 make
