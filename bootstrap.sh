@@ -14,16 +14,16 @@ apt-get upgrade
 export DEBIAN_FRONTEND=noninteractive
 
 # get all the compilers/tools
-apt-get -q -y install afnix algol68g aplus-fsf asymptote \
-  ats-lang-anairiats bash bf boo bsdgames clisp clojure1.4 cmake \
-  coffeescript f2c fp-compiler g++ gauche gawk gcc gforth gfortran \
-  ghc ghostscript gnat gnu-smalltalk gobjc golang groovy icont iconx \
+apt-get install -q -y afnix algol68g aplus-fsf asymptote \
+  ats-lang-anairiats bash bc bf boo bsdgames clisp clojure1.4 cmake \
+  coffeescript f2c fp-compiler g++ gauche gawk gcc gforth gfortran ghc \
+  ghostscript gnat gnu-smalltalk gobjc golang groovy icont iconx \
   intercal iverilog jasmin-sable libpng12-dev llvm lua5.2 make maxima \
-  mlton mono-devel mono-mcs mono-vbnc nasm neko nickle nodejs ocaml \
-  octave open-cobol openjdk-6-jdk pari-gp parrot perl php5-cli pike7.8 \
-  python r-base ratfor regina-rexx ruby2.0 scala scilab slsh spl-core \
+  mlton mono-devel mono-mcs mono-vbnc nasm neko nickle ocaml octave \
+  open-cobol openjdk-6-jdk pari-gp parrot perl php5-cli pike7.8 python \
+  r-base ratfor regina-rexx rhino ruby2.0 scala scilab slsh spl-core \
   swi-prolog tcl ucblogo valac xsltproc yorick zoem \
-  git tcc
+  git
 
 
 # otherwise step 72 ppt -> Prolog will fail with a:
@@ -44,4 +44,3 @@ cd vendor && make && cd ..
 
 # make it!
 make
-
