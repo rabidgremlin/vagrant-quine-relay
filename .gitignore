@@ -1,3 +1,7 @@
+##### Vagrant-Quine-Relay-specific
+.vagrant
+qr
+
 #################
 ## Eclipse
 #################
