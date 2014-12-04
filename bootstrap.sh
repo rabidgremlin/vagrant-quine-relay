@@ -15,7 +15,7 @@ export DEBIAN_FRONTEND=noninteractive
 
 # get all the compilers/tools
 apt-get install -q -y afnix algol68g aplus-fsf asymptote \
-  ats-lang-anairiats bash bc bf boo bsdgames clisp clojure1.4 cmake \
+  ats-lang-anairiats bash bc bf boo bsdgames cduce clisp clojure1.4 cmake \
   coffeescript f2c fp-compiler g++ gauche gawk gcc gforth gfortran ghc \
   ghostscript gnat gnu-smalltalk gobjc golang groovy icont iconx \
   intercal iverilog jasmin-sable libpng12-dev llvm lua5.2 make maxima \
@@ -23,7 +23,7 @@ apt-get install -q -y afnix algol68g aplus-fsf asymptote \
   open-cobol openjdk-6-jdk pari-gp parrot perl php5-cli pike7.8 python \
   r-base ratfor regina-rexx rhino ruby2.0 scala scilab slsh spl-core \
   swi-prolog tcl ucblogo valac xsltproc yorick zoem \
-  git
+  git libgd-dev
 
 
 # otherwise step 72 ppt -> Prolog will fail with a:
