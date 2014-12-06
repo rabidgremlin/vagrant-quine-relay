@@ -1,5 +1,5 @@
 
-Vagrant config to run the awesome [Quine Relay](https://github.com/mame/quine-relay)
+Vagrant config to run Yusuke Endoh's awesome 82-language [Quine Relay](https://github.com/mame/quine-relay)
 
 To use:
 
@@ -7,5 +7,3 @@ To use:
 2. switch to folder containing *Vagrantfile* and *bootstrap.sh*
 3. Run *vagrant up* Config should install all required files and run the process
 4. Check out *qr* folder for the resulting source files
-
-**Note:** Scheme and Fortran problems hopefully fixed, please leave issue if not.
