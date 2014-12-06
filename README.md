@@ -1,6 +1,8 @@
 
 Vagrant config to run Yusuke Endoh's awesome 82-language [Quine Relay](https://github.com/mame/quine-relay)
 
+[![Language Uroboros](https://github.com/mame/quine-relay)](https://raw.github.com/mame/quine-relay/master/langs.png)
+
 To use:
 
 1. install [Vagrant](http://www.vagrantup.com/)
