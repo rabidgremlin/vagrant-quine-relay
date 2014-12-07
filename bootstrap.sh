@@ -16,7 +16,7 @@ export DEBIAN_FRONTEND=noninteractive
 # get all the compilers/tools
 apt-get install -q -y afnix algol68g aplus-fsf asymptote \
   ats-lang-anairiats bash bc bf boo bsdgames cduce clisp clojure1.4 \
-  cmake coffeescript f2c fp-compiler g++ gauche gawk gcc gdc gforth \
+  cmake coffeescript dc f2c fp-compiler g++ gauche gawk gcc gdc gforth \
   gfortran ghc ghostscript gnat gnu-smalltalk gobjc golang groff groovy \
   icont iconx intercal iverilog jasmin-sable libgd2-xpm-dev libpng12-dev \
   llvm lua5.2 make maxima mlton mono-devel mono-mcs mono-vbnc nasm neko \
