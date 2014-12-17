@@ -1,5 +1,5 @@
 
-Vagrant config to run Yusuke Endoh's awesome [92-language Quine Relay](https://github.com/mame/quine-relay)
+Vagrant config to run Yusuke Endoh's awesome [93-language Quine Relay](https://github.com/mame/quine-relay)
 
 [![Language Uroboros](https://raw.github.com/mame/quine-relay/master/langs.png)](https://github.com/mame/quine-relay)
 

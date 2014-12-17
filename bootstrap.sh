@@ -18,13 +18,13 @@ apt-get install -q -y afnix algol68g aplus-fsf asymptote \
   ats-lang-anairiats bash bc bf boo bsdgames cduce clisp clojure1.4 \
   cmake coffeescript dc ecere-sdk emacs23 erlang f2c falconpl \
   fp-compiler fsharp g++ gambas3-script gap gauche gawk gcc gdc genius \
-  gforth gfortran ghc ghostscript gnat gnu-smalltalk gobjc golang groff \
-  groovy icont iconx intercal iverilog jasmin-sable libgd2-xpm-dev \
-  libpng12-dev llvm lua5.2 make maxima mlton mono-devel mono-mcs \
-  mono-vbnc nasm neko nickle ocaml octave open-cobol openjdk-6-jdk \
-  pari-gp parrot perl php5-cli pike7.8 python r-base ratfor regina-rexx \
-  rhino ruby2.0 scala scilab slsh spl-core swi-prolog tcl ucblogo valac \
-  xsltproc yorick zoem \
+  gforth gfortran ghc ghostscript gnat gnu-smalltalk gnuplot gobjc \
+  golang groff groovy icont iconx intercal iverilog jasmin-sable \
+  libgd2-xpm-dev libpng12-dev llvm lua5.2 make maxima mlton mono-devel \
+  mono-mcs mono-vbnc nasm neko nickle ocaml octave open-cobol \
+  openjdk-6-jdk pari-gp parrot perl php5-cli pike7.8 python r-base \
+  ratfor regina-rexx rhino ruby2.0 scala scilab slsh spl-core swi-prolog \
+  tcl ucblogo valac xsltproc yorick zoem \
   git
 
 # otherwise step ppt -> Prolog will fail with a:
@@ -42,7 +42,7 @@ git clone https://github.com/mame/quine-relay .
 
 # pin this version of vagrant-qr to language #84 eC
 # this is a specific commit to avoid dependency failure
-git checkout 2c00095d9d1f20a2a3fdc997116868669e66b46c >> /dev/null 2>&1
+git checkout b5e4ba96b1aa469cbabf93c4a7bd3955eefd0580 >> /dev/null 2>&1
 
 # make non-ubuntu-packaged language dependencies
 cd vendor && make && cd ..
