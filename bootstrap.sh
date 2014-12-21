@@ -19,7 +19,7 @@ apt-get install -q -y afnix algol68g aplus-fsf asymptote \
   cmake coffeescript dc ecere-sdk emacs23 erlang f2c falconpl \
   fp-compiler fsharp g++ gambas3-script gap gauche gawk gcc gdc genius \
   gforth gfortran ghc ghostscript gnat gnu-smalltalk gnuplot gobjc \
-  golang gpt groff groovy icont iconx intercal iverilog jasmin-sable \
+  golang gpt gri groff groovy icont iconx intercal iverilog jasmin-sable \
   libgd2-xpm-dev libpng12-dev llvm lua5.2 make maxima mlton mono-devel \
   mono-mcs mono-vbnc nasm neko nickle ocaml octave open-cobol \
   openjdk-6-jdk pari-gp parrot perl php5-cli pike7.8 python r-base \
@@ -42,7 +42,7 @@ git clone https://github.com/mame/quine-relay .
 
 # pin this version of vagrant-qr to language #84 eC
 # this is a specific commit to avoid dependency failure
-git checkout 1ecb884c6291deb2057ebc84b122707ff6a813e2 >> /dev/null 2>&1
+git checkout c924bb7544436843e5cada392120b38c63f56a9c >> /dev/null 2>&1
 
 # make non-ubuntu-packaged language dependencies
 cd vendor && make && cd ..
