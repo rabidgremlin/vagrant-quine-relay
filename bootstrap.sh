@@ -20,8 +20,8 @@ apt-get install -q -y afnix algol68g aplus-fsf asymptote \
   fp-compiler fsharp g++ gambas3-script gap gauche gawk gcc gdc genius \
   gforth gfortran ghc ghostscript gnat gnu-smalltalk gnuplot gobjc \
   golang gpt gri groff groovy haxe icont iconx intercal iverilog \
-  jasmin-sable julia kaya libgd2-xpm-dev libpng12-dev llvm lua5.2 make \
-  maxima mlton mono-devel mono-mcs mono-vbnc nasm neko nickle ocaml \
+  jasmin-sable julia kaya libgd2-xpm-dev libpng12-dev lisaac llvm lua5.2 \
+  make maxima mlton mono-devel mono-mcs mono-vbnc nasm neko nickle ocaml \
   octave open-cobol openjdk-6-jdk pari-gp parrot perl php5-cli pike7.8 \
   python r-base ratfor regina-rexx rhino ruby2.0 scala scilab slsh \
   spl-core swi-prolog tcl ucblogo valac xsltproc yorick zoem\
@@ -42,7 +42,7 @@ git clone https://github.com/mame/quine-relay .
 
 # pin this version of vagrant-quine-relay to language #97 Julia
 # this is a specific commit to avoid dependency failure
-git checkout fee48169068635bbc1355139beba7026f3a364b7 >> /dev/null 2>&1
+git checkout 78fa1b290a2b068e60550d1f9ec548ff0c143de1 >> /dev/null 2>&1
 
 # make non-ubuntu-packaged language dependencies
 cd vendor && make && cd ..
