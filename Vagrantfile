@@ -1,6 +1,6 @@
 Vagrant.configure("2") do |config|
-  config.vm.box = "utopic32"
-  config.vm.box_url = "http://cloud-images.ubuntu.com/vagrant/utopic/current/utopic-server-cloudimg-i386-vagrant-disk1.box"
+  config.vm.box = "vivid32"
+  config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/vivid/current/vivid-server-cloudimg-i386-vagrant-disk1.box"
   config.vm.provider "virtualbox" do |v|
     v.customize [
                     "modifyvm", :id,
@@ -10,7 +10,3 @@ Vagrant.configure("2") do |config|
   end
   config.vm.provision :shell, :path => "bootstrap.sh"
 end
-
-
-
-
